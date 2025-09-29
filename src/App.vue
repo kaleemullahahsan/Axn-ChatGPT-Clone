@@ -280,8 +280,10 @@ const showoptions = (chatId) => {
             </svg>
           </button>
         </div>
-        <p class="md:text-sm text-gray-500 text-center my-2 text-[12px]">ChatGPT can make mistakes. Check important
-          info.</p>
+        <p class="md:text-sm text-gray-500 text-center my-2 !text-[13px]">
+          <strong class="text-[13px]">Disclaimer</strong>: Messages sent to Gemini API, not stored by us; *limited data
+          store on local storage*.
+        </p>
       </div>
     </div>
   </main>
