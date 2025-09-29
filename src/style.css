@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@layer base{
+    .model p{
+       @apply mb-4
+    }
+    .model p:last-child{
+        @apply !pb-20
+    }
+    .model p:first-child{
+        @apply !pb-0
+    }
+    .model pre:last-child{
+        @apply pb-30
+    }
+    ul{
+        @apply list-disc m-5 space-y-3;
+    }
+    ol{
+        @apply  list-decimal m-5 space-y-3;
+    }
+    strong{
+        @apply text-lg;
+    }
+    ul strong, ol strong{
+       @apply  text-base;
+    }
+    hr{
+        @apply mb-5 border-gray-600
+    }
+}
