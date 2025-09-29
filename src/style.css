@@ -11,7 +11,7 @@
         @apply !pb-0
     }
     .model pre:last-child{
-        @apply pb-30
+        @apply pb-5
     }
     ul{
         @apply list-disc m-5 space-y-3;

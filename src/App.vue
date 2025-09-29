@@ -261,7 +261,7 @@ const showoptions = (chatId) => {
             </svg>
           </button>
           <textarea v-model="message" rows="1" class="flex-1  resize-none outline-none rounded p-2"
-            placeholder="Type a message..."></textarea>
+            placeholder="Ask anything"></textarea>
           <button class="cursor-not-allowed hover:bg-gray-50 rounded-full p-2">
             <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
               aria-label="" class="icon" font-size="inherit">
