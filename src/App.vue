@@ -251,7 +251,7 @@ const showoptions = (chatId) => {
       <div
         class="fixed textInput w-full lg:max-w-220 md:max-w-130 md:left-auto md:right-auto left-2 right-2 bottom-0 bg-white  m-auto flex justify-center flex-col items-center">
         <div
-          class="m-auto flex justify-center border bg-white border-gray-100 shadow gap-1 p-2 items-center rounded-full w-full ">
+          class="m-auto flex justify-center border bg-white border-gray-100 shadow gap-1 md:p-2 p-1 items-center rounded-full w-full ">
           <button class="cursor-not-allowed hover:bg-gray-50 rounded-full p-2">
             <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
               class="icon">
