@@ -4,14 +4,15 @@
     .model p{
        @apply mb-4
     }
-    .model p:last-child{
-        @apply !pb-20
-    }
+
     .model p:first-child{
         @apply !pb-0
     }
-    .model pre:last-child{
-        @apply pb-10
+    .model pre{
+        @apply p-5 bg-gray-100 my-5 rounded-lg
+    }
+    .model:last-child{
+        @apply !pb-[100px]
     }
     ul{
         @apply list-disc m-5 space-y-3;
