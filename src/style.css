@@ -28,4 +28,10 @@
     hr{
         @apply mb-5 border-gray-600
     }
+    .model .inline-block{
+        @apply w-full
+    }
+    .model code{
+        @apply text-wrap
+    }
 }
