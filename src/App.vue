@@ -4,8 +4,8 @@ import { ref, onMounted } from "vue";
 import { marked } from "marked";
 
 const message = ref("");
-const conversations = ref([]); // all chats
-const activeChat = ref(null);  // currently open chat
+const conversations = ref([]);
+const activeChat = ref(null); 
 const error = ref(null);
 const menu = ref(false);
 
@@ -15,7 +15,6 @@ const genAI = new GoogleGenerativeAI(GEMINI_API_KEY);
 const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
 let chatSession = null;
 
-// ✅ Load saved chats
 onMounted(() => {
   const saved = localStorage.getItem("conversations");
   if (saved) {
@@ -74,7 +73,7 @@ async function sendMessage() {
 function selectChat(chat) {
   activeChat.value = chat;
 }
-function unSelectChat(chat) {
+function unSelectChat() {
   activeChat.value = '';
 }
 
@@ -162,10 +161,10 @@ const showoptions = (chatId) => {
         <div v-if="menu" class="flex flex-col gap-2 w-full">
           <div v-for="chat in conversations" :key="chat.id"
             :class="activeChat && activeChat.id == chat.id ? 'bg-gray-100' : ''"
-            class="flex justify-between items-center p-2 hover:bg-gray-100 rounded-xl cursor-pointer "
+            class="flex justify-between items-center p-2 hover:bg-gray-100 rounded-xl cursor-pointer group"
             @click="selectChat(chat)">
             <span class="truncate w-36 ">{{ chat.title }}</span>
-            <div class="relative">
+            <div class="relative group-hover:block hidden">
               <span @click="showoptions(chat.id)" :id="chat.id">
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
                   class="icon" aria-hidden="true">
